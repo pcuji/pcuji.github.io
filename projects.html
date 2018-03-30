@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>technologies for bussines</title>
+    <meta charset="utf-8">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Personal website, resume, and portfolio for Pedro Cuji">
+    <meta name="keywords" content="web design, Engineer, Engineering, code, ">
+    <link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link href="css/css/style.css" rel="stylesheet">
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+    </head>
+
+  <body>
+    <header>
+    <!-- div is a block element, span is inline (google this is it a
+    block element meaning you will wrap text around).This means that to use them semantically,
+    divs should be used to wrap sections of a document, while spans should be used to wrap
+    small portions of text, images, etc.
+    Also, Many web sites contain HTML code like: <div id="nav"> <div class="header"> <div id="footer">
+    to indicate navigation, header, and footer.-->
+
+
+        <div class="container">
+            <div id= "branding">
+              <h1>Projects</h1>
+              <h2><span class ="highlight">Technologies For Bussines</span></h2>
+            </div>
+            <nav>
+              <!--nav stands for navegation is like a set of signals
+              tha willl allowme to navigate the website for example a list
+              of things having
+              home , skill ...Also in other words are links that take you
+            somewhere else-->
+
+              <ul>
+
+                    <li> <a href= "index.html">Home</a></li>
+                    <li> <a href="#page-project1" class="link-page">Project 1</a></li>
+                    <li> <a href="#page-project2" class="link-page">Project 2</a></li>
+                    <li> <a href="#page-project3" class="link-page">Project 3</a></li>
+                    <li> <a href="#page-project4" class="link-page">Project 4</a></li>
+              </ul>
+
+            </nav>
+        </div>
+    </header>
+
+    <!-- ******************************************************
+      SECTION: project 1
+      **********************************************************-->
+          <div class="section-vcardbody section-page" id="page-project1">
+              <div class="section-skills">
+                <!-- Section title -->
+                      <h2 class="section-title">Project 1</h2>
+                      <!-- /Section title -->
+                 <!-- Subtitle -->
+                      <h3 class="section-item-title-2"><i class="fas fa-graduation-cap"></i>&nbsp;&nbsp; Branch Predictor using VHDL and ModelSim</h3>
+                      <!-- /Subtitle -->
+                <!-- Skils List -->
+                <div class="skills-list">
+                            <!-- item-list -->
+                            <h3 class="progress-type">Description</h3>
+                            <p>My contribution in this project is underling the results and main differences among the three branch predictors. The outlined differences can make an impact on the latency of the CPU by having more accurate predictions.
+                               I have explored and understand how data stalls can be better avoid by having simple mechanism to take advantage of running time outcomes of branches. I want to present the results of these differences and make a clear comparison to know which predictor will be a better implementation.
+                                This project entails the hardware architecture of predictors and how this could help manage the flow of data. Unlike a static predictor on which we use a fixed prediction each time, a dynamic predictor does the prediction at running time. This is beneficial in a sense that the predictor is adapting to the behavior of the program. Accuracy and latency are important aspects that predictors can enhance since if a prediction is made correct it will impact the performance of the CPU.
+                            </p>
+                                <div>
+                                <p><i class="fab fa-github-square"></i>Link to code: <a href="https://github.com/pcuji/branch_predictor">
+                                  <!-- "a" it makes a hyperlink but it needs an attibute -->
+                                  https://github.com/pcuji/branch_predictor</a>.</p>
+                                </div>
+
+                              <h3 class="section-item-title-2">Results</h3>
+                              <div class="vcard-profile-pic">
+				                            <img src="images/results.jpg"  style = "width:50%" alt=""/>
+
+				                            <img src="images/waves.jpg"  class="profileActive"  style="width:50%" alt=""/>
+			                        </div>
+
+                </div>
+
+              </div>
+            </div>
+            <!-- ******************************************************
+              SECTION: project 2
+              **********************************************************-->
+                  <div class="section-vcardbody section-page" id="page-project2">
+                      <div class="section-skills">
+                        <!-- Section title -->
+                              <h2 class="section-title">Project 2</h2>
+                              <!-- /Section title -->
+                         <!-- Subtitle -->
+                              <h3 class="section-item-title-2"><i class="fas fa-graduation-cap"></i>&nbsp;&nbsp; Decentralized Peer to Peer File Sharing using C++</h3>
+                              <!-- /Subtitle -->
+                        <!-- Skils List -->
+                        <div class="skills-list">
+                                    <!-- item-list -->
+                                    <h3 class="progress-type">Description</h3>
+                                    <p>This project is underling the results and performance of the Decentralized file sharing and the step by step
+                                      procedure and implementation of a Decentralized peer to peer architecture. The architecture is popular since it allows downloads files of any other peer
+                                      and also search multiple index servers with lower latency for file sharing.
+                                      This description of the decentralized file sharing relies on a model that consist of nodes and an index server. The nodes will register with a random server and it will provide the information as the ID and the files that they possess to share with others nodes/peers and server indexes. The index server will collect the information of all this peers and their files. It will also possess a function that will allow peers to request information about the files. When the peer that request it will loop over all index servers and index tables table until it finds the file. The server will return the peers-nodes information to the requester. At this point the peer/node can choose to download form the peer that contains the file.
+
+                                    </p>
+
+                                      <h3 class="progress-type">Introduction</h3>
+
+                                   <p>
+                                      This File Sharing system provided file sharing among nodes or peers. The mainframe architecture of the decentralized file sharing relies on an architecture which allows the peer to peer (P2P) download and search into the servers to be independent of each other. The architecture of this system is a basic architecture of networks and technology in today infrastructure.
+
+                                  </p>
+
+                                        <div>
+                                        <p><i class="fab fa-github-square"></i>Link to code: <a href="https://github.com/pcuji/peer_to_peer_file_sharing">
+                                          <!-- "a" it makes a hyperlink but it needs an attibute -->
+                                          https://github.com/pcuji/peer_to_peer_file_sharing</a>.</p>
+                                        </div>
+
+                                      <h3 class="section-item-title-2">Results</h3>
+                                      <div class="vcard-profile-pic">
+                                            <img src="images/results2.jpg" id="profile2" style= "width:50%" alt=""/>
+                                            <img src="images/waves2.jpg" id="profile1" class="profileActive"  style="width:50%" alt=""/>
+                                     </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- ******************************************************
+                      SECTION: project 3
+                      **********************************************************-->
+                          <div class="section-vcardbody section-page" id="page-project3">
+                              <div class="section-skills">
+                                <!-- Section title -->
+                                      <h2 class="section-title">Project 3</h2>
+                                      <!-- /Section title -->
+                                 <!-- Subtitle -->
+                                      <h3 class="section-item-title-2"><i class="fas fa-graduation-cap"></i>&nbsp;&nbsp; FPGA</h3>
+                                      <!-- /Subtitle -->
+                                <!-- Skils List -->
+                                <div class="skills-list">
+
+                                            <h3 class="progress-type">Description (comming)</h3>
+                                            <!--
+                                            <p>
+                                            </p>
+                                              <h3 class="progress-type">Introduction</h3>
+                                           <p>
+                                              This File Sharing system provided file sharing among nodes or peers. The mainframe architecture of the decentralized file sharing relies on an architecture which allows the peer to peer (P2P) download and search into the servers to be independent of each other. The architecture of this system is a basic architecture of networks and technology in today infrastructure.
+                                          </p>
+                                                <div>
+                                                <p><i class="fab fa-github-square"></i>Link to code: <a href="https://github.com/pcuji/peer_to_peer_file_sharing">
+
+                                                  https://github.com/pcuji/peer_to_peer_file_sharing</a>.</p>
+                                                </div>
+
+                                              <h3 class="section-item-title-2">Results</h3>
+                                              <div class="vcard-profile-pic">
+                                                    <img src="images/results2.jpg" id="profile2" style= "width:50%" alt=""/>
+                                                    <img src="images/waves2.jpg" id="profile1" class="profileActive"  style="width:50%" alt=""/>
+                                             </div>
+                                            -->
+                                </div>
+                              </div>
+                            </div>
+
+                            <!-- ******************************************************
+                              SECTION: project 4
+                              **********************************************************-->
+                                  <div class="section-vcardbody section-page" id="page-project4">
+                                      <div class="section-skills">
+                                        <!-- Section title -->
+                                              <h2 class="section-title">Project 4</h2>
+                                              <!-- /Section title -->
+                                         <!-- Subtitle -->
+                                              <h3 class="section-item-title-2"><i class="fas fa-graduation-cap"></i>&nbsp;&nbsp; AWS</h3>
+                                              <!-- /Subtitle -->
+                                        <!-- Skils List -->
+                                        <div class="skills-list">
+
+                                                    <h3 class="progress-type">Description (comming)</h3>
+                                                    <!--
+                                                    <p>
+                                                    </p>
+                                                      <h3 class="progress-type">Introduction</h3>
+                                                   <p>
+                                                      This File Sharing system provided file sharing among nodes or peers. The mainframe architecture of the decentralized file sharing relies on an architecture which allows the peer to peer (P2P) download and search into the servers to be independent of each other. The architecture of this system is a basic architecture of networks and technology in today infrastructure.
+                                                  </p>
+                                                        <div>
+                                                        <p><i class="fab fa-github-square"></i>Link to code: <a href="https://github.com/pcuji/peer_to_peer_file_sharing">
+
+                                                          https://github.com/pcuji/peer_to_peer_file_sharing</a>.</p>
+                                                        </div>
+
+                                                      <h3 class="section-item-title-2">Results</h3>
+                                                      <div class="vcard-profile-pic">
+                                                            <img src="images/results2.jpg" id="profile2" style= "width:50%" alt=""/>
+                                                            <img src="images/waves2.jpg" id="profile1" class="profileActive"  style="width:50%" alt=""/>
+                                                     </div>
+                                                    -->
+                                        </div>
+                                      </div>
+                                    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+    <script  src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script>
+      window.sr = ScrollReveal();
+      sr.reveal('.container', {
+        duration: 2000,
+        origin: 'bottom'
+      })
+      sr.reveal('.skills-list', {
+        duration: 2000,
+        origin: 'bottom'
+      })
+
+    </script>
+  </body>
+
+</html>

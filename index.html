@@ -1,0 +1,446 @@
+<!doctype html>
+<html lang="en">
+<!-- doctype  only means that it is html 5 for now  -->
+<!--<html> -->
+<!-- the file is called html so it will be recognize as a web page -->
+<!-- html is very much tags  -->
+<!-- br creates line brakes -->
+<!-- p creates fresh paragrhaphs in eithe side w/ space  -->
+<!-- h1 is for header sizes -->
+<!-- head is reserved for other stuff meaning the user do not interact with
+  for example linking libraries this can be your own or form ofthe computes if you talk about networking -->
+  <head>
+    <!-- <meta name="description" content="Personal website, resume, and portfolio for Pedro Cuji"> -->
+    <meta name="author" content="Pedro Cuji">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Personal website, resume, and portfolio for Pedro Cuji">
+    <meta name="keywords" content="web design, Engineer, Engineering, code, ">
+
+    <!--he viewport varies with the device, and will be smaller on a mobile phone than on a computer screen.-->
+    <title>PEDRO CUJI Website</title>
+    <!-- title will display on one of the taps of the of the computer-->
+    <!-- you link to add style -->
+    <!--scroll revel is for give the transomation that come from the background -->
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+
+    <link href="css/style.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    	<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    	<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+    <!-- animate you can create your own and waypoint helps to run smoothitly this animations
+    waitpoints very much delays the animation-->
+  	<link href="css/animate.css" rel="stylesheet"/>
+
+  	<link href="css/waypoints.css" rel="stylesheet"/>
+  	<script src="js/jquery.waypoints.min.js"></script>
+  	<script src="js/waypoints.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+  </head>
+
+<body id="page-top" class="index">
+  <!-- wherever you see in the body tag is what you see and the user interact with
+2. id: the id attibute can help you scroll down to where is attach to so for example if you href = "#one"
+  this will take you once someone chlic in a unorder list and li taps <ul> <li> <a href .....
+
+ -->
+
+    <!-- Header -->
+    <header>
+    <!-- div is a block element, span is inline (google this is it a
+    block element meaning you will wrap text around).This means that to use them semantically,
+    divs should be used to wrap sections of a document, while spans should be used to wrap
+    small portions of text, images, etc.
+    Also, Many web sites contain HTML code like: <div id="nav"> <div class="header"> <div id="footer">
+    to indicate navigation, header, and footer.-->
+
+
+        <div class="container">
+            <div id= "branding">
+              <h1>Pedro Cuji</h1>
+              <h2><span class ="highlight">Technologies For Bussines</span></h2>
+            </div>
+            <nav>
+              <!--nav stands for navegation is like a set of signals
+              tha willl allowme to navigate the website for example a list
+              of things having
+              home , skill ...Also in other words are links that take you
+            somewhere else-->
+
+              <ul>
+                    <li class="current">Home</li>
+                    <li> <a href= "projects.html">Projects</a></li>
+                    <li> <a href="#about" class="link-page" >About</a></li>
+
+                    <li> <a href="#page-skills" class="link-page">Skills</a></li>
+                    <li> <a href="#recent_work" class="link-page">Recent Work</a></li>
+                    <li> <a href="#clients" class="link-page">Clients</a></li>
+              </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- End of Header -->
+    <!-- Profile Section -->
+    <section  id="showcase">
+        <div class="container">
+          <img alt="" data-sr="reset wait 2s enter bottom and move 150px" class="admin-pic img-circle" src="Pedro123.jpg" width="300">
+
+            <section class="os-animation" data-os-animation="bounceInUp" data-os-animation-delay="0s">
+
+              <h1> <strong>Hello, I am
+                Pedro Cuji an Electrical & Computer Engineer
+              </strong></h1>
+            </section>
+
+            <section class="os-animation" data-os-animation="bounceInUp" data-os-animation-delay="0.1s">
+              <p><strong>I just finished my studies in Electrical & Computer Engineering at Illinois Institude
+                of Technology University. While I was in school I worked in the hospitality industry,I know quite a lot about customers serverce, I am an active systems and applications Engineer. If you wish to collaborate with me or hire me, as freelancer. I invite you to check my work and see some of my current and working projects.
+              </strong></p>
+            </section>
+
+        </div>
+    </section>
+    <!-- End of Profile Section and start of boxes as github etc -->
+
+    <section id= "boxes">
+      <div class="container">
+        <div class="box">
+          <a href="https://github.com/pcuji"><i  class="fab fa-github"></i></a>
+          <h3>GitHub</h3>
+          <p>Colaborations on GitHub</p>
+        </div>
+        <div class="box">
+          <a href="https://www.linkedin.com/in/pedrojosecuji"><i class="fab fa-linkedin"></i></a>
+          <h3>Linkedin</h3>
+          <p>Professional Profile</p>
+        </div>
+        <div class="box">
+          <a href="https://bitcoinchain.com/"><i class="fab fa-bitcoin"></i></a>
+          <h3>Bitcoin tip Jar</h3>
+          <p>If you like my work</p>
+        </div>
+        <div class="box">
+          <a href="12_2017_resume.pdf" download class="btn btn-default btn-default2"><i class="fa fa-download"></i></a>
+          <!--<a href="https://www.linkedin.com/in/pedrojosecuji"  class="fas fa-download"></a> -->
+          <h3>Resume Download</h3>
+          <p>pdf</p>
+        </div>
+        <div class="box">
+          <a href="#page-contact" class="btn btn-default btn-default2 link-page"><i class="fa fa-download"></i></a>
+          <!--<a href="https://www.linkedin.com/in/pedrojosecuji"  class="fas fa-download"></a> -->
+          <h3>Get in touch</h3>
+          <p>contact me </p>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ******************************************************
+      SECTION: SKILLS
+      **********************************************************-->
+          <div class="section-vcardbody section-page" id="page-skills">
+              <div class="section-skills">
+
+                <!-- Section title -->
+                      <h2 class="section-title">SKILLS</h2>
+                      <!-- /Section title -->
+                 <!-- Subtitle -->
+                      <h3 class="section-item-title-2"><i class="fa fa-code"></i>&nbsp;&nbsp; Code Skills</h3>
+                      <!-- /Subtitle -->
+
+                <!-- Skils List -->
+                <ul class="skills-list">
+                            <!-- item-list -->
+                            <li>
+                              <div class="progress">
+                                <span class="progress-type">VHDL</span>
+                              </div>
+                            </li>
+                            <!-- /item list -->
+                            <!-- item-list -->
+                            <li>
+                              <div class="progress">
+                                <span class="progress-type">C/C++/Java/Python</span>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="progress">
+                                <span class="progress-type">Also experiance with: Apache Spark/ Amazon Web Services</span>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="progress">
+                                <span class="progress-type">Assembly: CISC & MIPS </span>
+                              </div>
+                            </li>
+                            <!-- /item list -->
+                            <!-- item-list -->
+                            <li>
+                              <div class="progress">
+                                <span class="progress-type">MATLAB</span>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="progress">
+                                <span class="progress-type">HTML5/CSS3</span>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="progress">
+                                <span class="progress-type">Text Editors: Vim/Atom/Notepad ++</span>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="progress">
+                                <span class="progress-type">Linux /Systems Programing</span>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="progress">
+                                <span class="progress-type">Git (Version Control)</span>
+                              </div>
+                            </li>
+                            <!-- /item list -->
+                          </ul>
+                <!-- /Skils List -->
+
+                 <!-- Subtitle -->
+                      <h3 class="section-item-title-2"><i class="fa fa-laptop"></i>&nbsp;&nbsp; Software Skills</h3>
+                      <!-- /Subtitle -->
+
+                <!-- Skils List -->
+                <ul class="skills-list">
+                            <!-- item-list -->
+                            <li>
+                              <div class="progress">
+                                <span class="progress-type">ModelSim</span>
+                              </div>
+                            </li>
+                            <!-- /item list -->
+                            <!-- item-list -->
+                            <li>
+                              <div class="progress">
+                                <span class="progress-type">PSpice</span>
+                              </div>
+                            </li>
+                            <!-- /item list -->
+                            <!-- item-list -->
+                            <li>
+                              <div class="progress">
+                                <span class="progress-type">Power World</span>
+                              </div>
+                            </li>
+                            <!-- /item list -->
+                          </ul>
+                          <h3 class="section-item-title-2"><i class="fas fa-language"></i>&nbsp;&nbsp; Languages</h3>
+                          <!-- /Subtitle -->
+
+                    <!-- Skils List -->
+                    <ul class="skills-list">
+                                <!-- item-list -->
+                                <li>
+                                  <div class="progress">
+                                    <span class="progress-type">English</span>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="progress">
+                                    <span class="progress-type">Spanish</span>
+                                  </div>
+                                </li>
+                              </ul>
+
+                <!-- /Skils List -->
+
+                      <!-- Subtitle -->
+                      <h3 class="section-item-title-2"><i class="fa fa-users"></i>&nbsp;&nbsp; Professional Skills</h3>
+                      <!-- /Subtitle -->
+
+                <!-- Skils List -->
+                <ul class="skills-list">
+                            <!-- item-list -->
+                            <li>
+                              <div class="progress">
+                                <span class="progress-type">Communication</span>
+                              </div>
+                            </li>
+                            <!-- /item list -->
+                            <!-- item-list -->
+                            <li>
+                              <div class="progress">
+                                <span class="progress-type">Leadership</span>
+                              </div>
+                            </li>
+                            <!-- /item list -->
+                            <!-- item-list -->
+                            <li>
+                              <div class="progress" title="Doing my best!">
+                                <span class="progress-type">Confidence</span>
+                              </div>
+                            </li>
+                            <!-- /item list -->
+                        </ul>
+                <!-- /Skils List -->
+              </div>
+            </div>
+
+            <!-- ******************************************************
+              SECTION: About
+              **********************************************************-->
+                  <div class="section-vcardbody section-page" id="about">
+                      <div class="section-skills">
+                        <!-- Section title -->
+                              <h2 class="section-title">About</h2>
+                              <!-- /Section title -->
+                         <!-- Subtitle -->
+                              <h3 class="section-item-title-2"><i class="fas fa-user"></i>&nbsp;&nbsp; Profile</h3>
+                              <!-- /Subtitle -->
+                        <!-- Skils List -->
+                        <div class="skills-list">
+                                    <!-- item-list -->
+
+                                    <p> Multitalented, problem solver, team-player individual. I started working when I was 8 yers old.
+                                      My philosiphy and work ethic is based on hard work. I belive that everything is posssible
+                                      but one need to be determined to do the work first.
+                                    <span><br>
+                                       As an Electrical and computer engineer I am passionate about the field, hardworking, enthusiastic about learning and solving the new industry challenges.
+
+                                      I am very good at working under very stressful circumstances. I am accustomed to work in teams,
+                                      I am looking for a position developing technologies for business.
+                                      Some of my skills that I am offering are:
+                                      <span><br>
+                                        •	Software development skills
+                                        •	Ability to adapt to new tasks
+                                        •	I have vast customer service skills
+                                        •	I am good a building relationships
+                                        •	Ability to write reports.
+                                      </span>
+
+                                   </span>
+
+                                      </p>
+
+
+
+                        </div>
+
+                      </div>
+                    </div>
+
+                    <!-- ******************************************************
+                      SECTION: REcent work
+                      **********************************************************-->
+                          <div class="section-vcardbody section-page" id="recent_work">
+                              <div class="section-skills">
+                                <!-- Section title -->
+                                      <h2 class="section-title">Recent Work</h2>
+                                      <!-- /Section title -->
+                                 <!-- Subtitle -->
+                                      <h3 class="section-item-title-2"><i class="fas fa-stethoscope"></i>&nbsp;&nbsp; Electronics Technitian at Modern Tech Solutions</h3>
+                                      <!-- /Subtitle -->
+                                <!-- Skils List -->
+                                <div class="skills-list">
+                                            <!-- item-list -->
+
+                                            <p> Electronics technician, Chicago, IL
+• Reparation and troubleshooting of current electronics as Mac’s, IPhone, Galaxy phones using software and
+hardware tools
+                                              </p>
+                                              <div class="tech-profile-pic">
+                				                            <img src="images/image1.jpg" id="profile2" style = "width:30%" alt=""/>
+
+
+                			                        </div>
+
+
+
+                                </div>
+
+                              </div>
+                            </div>
+
+
+                            <!-- ******************************************************
+                              SECTION: Clients
+                              **********************************************************-->
+                                  <div class="section-vcardbody section-page" id="clients">
+                                      <div class="section-skills">
+                                        <!-- Section title -->
+                                              <h2 class="section-title">Clients</h2>
+                                              <!-- /Section title -->
+                                         <!-- Subtitle -->
+                                              <h3 class="section-item-title-2"><i class="fas fa-graduation-cap"></i>&nbsp;&nbsp; Tutoring Friends with Mathematics and Coding</h3>
+                                              <!-- /Subtitle -->
+                                        <!-- Skils List -->
+                                        <div class="skills-list">
+                                                    <!-- item-list -->
+
+                                                    <p>
+
+                                                      <span><br>
+                                                        •	Tutor friend and coworker Milton Pillacela with Math 99 and Math 100 for a placement exam
+
+                                                      </span>
+                                                      <span><br>
+                                                        •	Tutor friend and coworker Madeline Grubich student of Columbia University with CSS and HTML
+                                                      </span>
+
+                                                      </p>
+
+                                        </div>
+
+                                      </div>
+                                    </div>
+                                    <!-- ******************************************************
+                                      SECTION: Get in touch
+                                      **********************************************************-->
+                                          <div class="section-vcardbody section-page" id="page-contact">
+                                              <div class="section-skills">
+                                                <!-- Section title -->
+                                                      <h2 class="section-title">Get in touch</h2>
+                                                      <!-- /Section title -->
+                                                 <!-- Subtitle -->
+                                                      <h3 class="section-item-title-2"><i class="fas fa-address-card"></i>&nbsp;&nbsp; Contact me preferable through email</h3>
+                                                      <!-- /Subtitle -->
+                                                <!-- Skils List -->
+                                                <div class="skills-list">
+                                                            <!-- item-list -->
+
+                                                            <p>
+
+                                                              <span><br>
+                                                                •	pedrojosecuji@gmail.com
+
+                                                              </span>
+                                                              <span><br>
+                                                                 <a href="https://www.linkedin.com/in/pedrojosecuji">
+                                                                  <!-- "a" it makes a hyperlink but it needs an attibute -->
+                                                                • www.linkedin.com/in/pedrojosecuji</a>
+                                                              </span>
+                                                              </p>
+                                                </div>
+
+                                              </div>
+                                            </div>
+
+
+    <footer>
+      <p> @ 2018 Pedro Cuji Website</p>
+      <p>Posted by: Pedro Cuji</p>
+      <p>Contact information: <a href="https://www.linkedin.com/in/pedrojosecuji">
+        <!-- "a" it makes a hyperlink but it needs an attibute -->
+        www.linkedin.com/in/pedrojosecuji</a>.</p>
+    </footer>
+    <script>
+      window.sr = ScrollReveal();
+      sr.reveal('.skills-list', {
+        duration: 2000,
+        origin: 'bottom'
+      })
+    </script>
+
+  </body>
+</html>

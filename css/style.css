@@ -1,0 +1,204 @@
+
+/*
+a float element is the propety of elements to be around is containers
+for example your personal picture that is wrap around your text
+2. Block elemets vs line elements: block elements are the ones ocupy entire spaces
+  in the page and also the start ate the begining of the frame of the page
+  unlike line elements which are just like block elements but they start anywhere
+  in the page. for example lets say i want to put a picture on the midle of a recipie
+   s s s
+3. media query are extra things that one can apply to the already working css
+  to add small canges lets says header backgrounds. the purpose of this is
+  to make it look different in different devices.
+
+*/
+
+body {/*
+  body is called selector and open brakets put the propety. it is use as something
+  we want to add style to it. Also background is the rule and the number is the value you want to give it;*/
+  overflow-x: hidden;
+  font: normal 16px/30px "Open Sans", Helvetica, Arial, sans-serif;
+  padding:0;
+  background: #e6fff9;
+  font-family:Georgia,serif;
+  font-size:15px;
+  /* line-height is the ammount of space between each line
+  A short cut will be as follows
+  font: 15px/1.5 Arial, Helvetica, sans-serif */
+  line-height:1.5;
+}
+/* 1. the . dot means i am looking for a class
+2. you can only have one thing called id because is special if you have more you are breaking the rule
+and you also use the number sign
+*/
+
+.container{
+  /* width is responsive so or an adaptive size therefore it is better to have as an a precentage
+  margin to auto will move it to the middle
+  the hidden will hide the scroll down bars it the website has more to it */
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+ul {
+  /*margin and padding its taking out since it is automatic
+  also note how this is before the header to make it global
+  */
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: #3BF5D7;
+  /* color: dodgerBlue;  this will chage the color of the header letters to a blue
+  the padding-top is above the first h1 header
+  min-height is for when srinking the page it will not go any further ( i think, check)
+  border-bottom is the orange frame on the bottom
+  */
+  padding-top: 5px;
+  min-height: 70px;
+  border-bottom: #ffa64d 3px solid;
+}
+header a {
+  /*this are all the header links, since all the links are
+  note keep doing this by checking the hiperlinks the way you want them to look
+  also compare with the website functionaly and colors you want I am aroun time 27 min
+  2. the text-decoration is for get rid off of the hyperlink
+  3. the text-transform is for make them uppercase
+
+  */
+  /*color: #ffffff; */
+  color: dodgerBlue;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+header li {
+  /*padding is the space around the letters
+  */
+  float : left;
+  display: inline;
+  padding: 0 20px 0 20px;
+}
+
+header #branding{
+  /*branding it is an id and we want to use the number sign
+
+  */
+  float: left;
+}
+header #branding h1 {
+  margin: 0;
+}
+header nav {
+  float: right;
+  margin-top: 10px;
+}
+header .highlight , header .current a{
+  /*note how the color of only one of the h2 changes ( you can also change the color patially)
+
+  */
+  color: #008062;
+  font-weight: bold;
+}
+#showcase {
+  /*note that on the background you can aling the part of the pricture you want by using the 0 or -40
+  they work as axes x, y ,z */
+  min-height: 400px;
+  background: url('../images/chip.png') no-repeat 0  ;
+  text-align: right;
+
+
+  text-shadow:  1px 1px  #ffa64d ;
+  color: #ffffff;
+
+  /*
+  color: #66ff66;
+text-shadow: 2px 2px #1b2947;
+  color: #ff751a;
+  color: #1b2947;
+  */
+}
+
+img {
+  float: left;
+}
+/* boxes */
+#boxes{
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+}
+#boxes .box   {
+  float: left;
+  width: 18%;
+  padding: 5px;
+  text-align: center;
+
+}
+#boxes .box .box1 h3  {
+  min-height: 30px;
+}
+.box a  {
+    font-size: 32px;
+}
+.section-vcardbody {
+  width: 99%;
+  margin: 0 auto;
+  overflow-y: scroll;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-top: 6px solid #111;
+  border-radius: 0px;
+  box-shadow: 0px 6px 18px 0px rgba(0, 0, 0, 0.46);
+  border-bottom: 15px solid #f4f4f4;
+}
+.section-item-title-2 {
+  font-weight: bold;
+  color: #021533;
+  color: #333;
+  padding-left: 0;
+  margin-left: 0;
+  font-size: 18px;
+  line-height: 22px;
+  margin: 0;
+  margin-bottom: 8px;
+  letter-spacing: -1px;
+  border-bottom: 1px dotted #021533;
+  padding-bottom: 5px;
+  font-size: 15px;
+}
+
+/******************
+skills list
+*******************/
+.skills-list {
+  padding-left: 0;
+  margin-left: 0;
+}
+.progress {
+  position: relative;
+  height: 25px;
+  margin-bottom: 0;
+}
+.progress > .progress-type {
+  position: absolute;
+  left: 0px;
+  font-size: 13px;
+  padding: 3px 30px 2px 10px;
+  margin: 0;
+}
+.skills-list {
+  list-style: none;
+  margin-bottom: 40px;
+}
+
+footer {
+  padding: 20px;
+  margin-top: 5px;
+  background-color: #3BF5D7;
+  color: #008062;
+  text-align: center;
+}
