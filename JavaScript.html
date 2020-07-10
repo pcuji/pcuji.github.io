@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>technologies for bussines</title>
+    <meta charset="utf-8">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Personal website, resume, and portfolio for Pedro Cuji">
+    <meta name="keywords" content="web design, Engineer, Engineering, code, ">
+    <link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link href="css/css/style.css" rel="stylesheet">
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+    </head>
+
+  <body>
+    <header>
+    <!-- div is a block element, span is inline (google this is it a
+    block element meaning you will wrap text around).This means that to use them semantically,
+    divs should be used to wrap sections of a document, while spans should be used to wrap
+    small portions of text, images, etc.
+    Also, Many web sites contain HTML code like: <div id="nav"> <div class="header"> <div id="footer">
+    to indicate navigation, header, and footer.-->
+
+
+        <div class="container">
+            <div id= "branding">
+              <h1>Projects</h1>
+              <h2><span class ="highlight">Technologies For Bussines</span></h2>
+            </div>
+            <nav>
+              <!--nav stands for navegation is like a set of signals
+              tha willl allowme to navigate the website for example a list
+              of things having
+              home , skill ...Also in other words are links that take you
+            somewhere else-->
+
+              <ul>
+
+                    <li> <a href= "index.html">Home</a></li>
+                    <li> <a href="#page-project1" class="link-page">Project 1</a></li>
+                    <li> <a href="#page-project2" class="link-page">Project 2</a></li>
+                    <li> <a href="#page-project3" class="link-page">Project 3</a></li>
+                    <li> <a href="#page-project4" class="link-page">Project 4</a></li>
+              </ul>
+
+            </nav>
+        </div>
+    </header>
+            <!-- ******************************************************
+              SECTION: JavaScript
+              **********************************************************-->
+                  <div class="section-vcardbody section-page" id="JavaScript">
+                      <div class="section-skills">
+                              <h2 class="section-title">JavaScript</h2>
+                              <h3 class="section-item-title-2"><i class="fas fa-graduation-cap"></i>&nbsp;&nbsp; Write a loop that makes seven calls to console.log to output the following triangle:</h3>
+                        <p>Console</p>
+                        <button onclick="doHeavyTask()">Try it 1</button>
+                        <script type="text/javascript">
+                        function doHeavyTask(params) {
+                        var totalMillisAllotted = params.totalMillisAllotted;
+                        var totalTasks = params.totalTasks;
+                        var tasksPerTick = params.tasksPerTick;
+                        var tasksCompleted = 0;
+                        var totalTicks = Math.ceil(totalTasks / tasksPerTick);
+                        var interval = null;
+
+                        if (totalTicks === 0) return;
+                        var doTick = function() {
+                          var totalByEndOfTick = Math.min(tasksCompleted + tasksPerTick, totalTasks);
+                          do {
+                            params.task(tasksCompleted++);
+                          } while(tasksCompleted < totalByEndOfTick);
+                          if (tasksCompleted >= totalTasks) clearInterval(interval);
+                        };
+                        doTick();
+                        if (totalTicks > 1) interval = setInterval(doTick, totalMillisAllotted / totalTicks);
+                      }
+                      doHeavyTask({
+                        totalMillisAllotted: 5 * 1000,
+                        totalTasks: 10000,
+                        tasksPerTick: 100,
+                        task: function(n) { console.log(n + 1); }
+                      });
+                        </script>
+
+
+
+                        <p>Click the button to loop through a block of code five times with a half triangle</p>
+                          <button onclick="myFunction()">Try it</button>
+                          <p id="demo"></p>
+                          <script>
+                          function myFunction() {
+                            var text = "";
+                            var hash = "#";
+                            var i;
+                            for (i = 0; i < 5; i++) {
+                              text += "The number is " + i + hash +  "<br>";
+                              hash += hash + "#";
+                            }
+                            document.getElementById("demo").innerHTML = text;
+                          }
+                          </script>
+
+                          <script type="text/javascript">
+                          const makeNoise = function() {
+                            console.log("Pling!");
+                            };
+                            makeNoise();
+                          </script>
+                          <script type="text/javascript">
+                          const power = function(base, exponent) {
+                            let result = 1;
+                            for (let count = 0; count < exponent; count++) {
+                            result *= base;
+                            }
+                            return result;
+                            };
+
+                            console.log(power(2, 10));
+                          </script>
+
+                          <!-- ******************************************************
+                          Enter Name
+                            **********************************************************-->
+
+                          <p>Enter your name</p>
+                          <button onclick = " myFunction2()" >push me </button>
+                          <p id="demo1"></p>
+                          <script type="text/javascript">
+                              function myFunction2(){
+                                var text1;
+                                var person = prompt("Please enter your name:", "e.i. Harry Styles");
+                                if (person==null || person == ""){
+                                  text1 = "User decide to avoid the prompt";
+
+                                }
+                                else {
+                                  text1 = "Hello " + person + " you are welcome to this site"
+
+                                }
+                                document.getElementById("demo1").innerHTML = text1;
+                              }
+                          </script>
+
+                          <!-- ******************************************************
+                          Find minimum
+                            **********************************************************-->
+                          <p>Enter 2 numbes to find min</p>
+                          <button onclick = "myFunction3()" > enter number </button>
+                          <p id= "demo3"></p>
+                          <script type="text/javascript">
+                            function myFunction3(){
+                              var result3;
+                              var number1 = prompt("Enter your fist number:", "e.i. 1");
+                              var number2 = prompt("Enter your second number:", "e.i. 1");
+                              result3 = Math.min( number1 , number2);
+                              document.getElementById("demo3").innerHTML = result3;
+                          
+                          }
+                          </script>
+                      </div>
+                    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+    <script  src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script>
+      window.sr = ScrollReveal();
+      sr.reveal('.container', {
+        duration: 2000,
+        origin: 'bottom'
+      })
+      sr.reveal('.skills-list', {
+        duration: 2000,
+        origin: 'bottom'
+      })
+
+    </script>
+  </body>
+
+</html>
