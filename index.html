@@ -7,10 +7,9 @@
 <!-- br creates line brakes -->
 <!-- p creates fresh paragrhaphs in eithe side w/ space  -->
 <!-- h1 is for header sizes -->
-<!-- head is reserved for other stuff meaning the user do not interact with
-  for example linking libraries this can be your own or form ofthe computes if you talk about networking -->
+<!-- head is reserved for other stuff and the user do not interact with it
+  for example, linking libraries. This linking libraries can be your own or form ofthe computes if you talk about networking -->
   <head>
-    <!-- <meta name="description" content="Personal website, resume, and portfolio for Pedro Cuji"> -->
     <meta name="author" content="Pedro Cuji">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -23,6 +22,9 @@
     <!-- you link to add style -->
     <!--scroll revel is for give the transomation that come from the background -->
     <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    
+    <!-- this animation was for title technologies for business  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 
     <link href="css/style.css" rel="stylesheet">
 
@@ -38,13 +40,64 @@
   	<script src="js/jquery.waypoints.min.js"></script>
   	<script src="js/waypoints.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+<!-- this is shorcout to add formating to form -->
+    <style media="screen">
+      form {
+        margin: 0 auto;
+        width: 400px;
+        padding: 1em;
+        border: 1px solid #CCC;
+        border-radius: 1em;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      form li + li {
+        margin-top: 1em;
+      }
+
+      label {
+        display: inline-block;
+        width: 90px;
+        text-align: right;
+      }
+      input, textarea {
+        font: 1em sans-serif;
+        width: 300px;
+        box-sizing: border-box;
+        border: 1px solid #999;
+      }
+
+      input: focus, textarea: focus {
+        border-color: #000;
+      }
+
+      textarea {
+        vertical-align: top;
+        height: 5em;
+      }
+
+      .button {
+        padding-left: 90px;
+      }
+
+      button {
+        margin-left: .5em;
+      }
+
+    </style>
   </head>
 
 <body id="page-top" class="index">
   <!-- wherever you see in the body tag is what you see and the user interact with
 2. id: the id attibute can help you scroll down to where is attach to so for example if you href = "#one"
-  this will take you once someone chlic in a unorder list and li taps <ul> <li> <a href .....
+  this will take you once someone click in a another list and li taps <ul> <li> <a href .....
 
  -->
 
@@ -58,41 +111,71 @@
     to indicate navigation, header, and footer.-->
 
 
+    <!-- this animation was reference from  https://tobiasahlin.com/moving-letters/ -->
+       
+      
+      
+          <h1 class="ml5">
+            <span class="text-wrapper">
+              <span class="line line1"></span>
+              <span class="letters letters-left">Technologies</span>
+              <span class="letters ampersand">&amp;</span>
+              <span class="letters letters-right">Business</span>
+              <span class="line line2"></span>
+            </span>
+          </h1>
+
+
+
+
+        </div>
         <div class="container">
-            <div id= "branding">
-              <h1>Pedro Cuji</h1>
-              <h2><span class ="highlight">Technologies For Business</span></h2>
+           
+            <div class  = "topnav" id= "myTopnav"> 
+              <nav>
+                <!--nav stands for navegation is like a set of signals
+                tha willl allowme to navigate the website for example a list
+                of things having
+                home , skill ...Also in other words are links that take you
+              somewhere else-->
+
+                <ul>
+                      <a class="active">Home</a>
+                      <a href= "projects.html">Projects</a>
+                      <a href="#about" class="link-page" >About</a>
+
+                      <a href="#page-skills" class="link-page">Skills</a>
+                      <a href="#recent_work" class="link-page">Recent Work</a>
+                      <a href="#clients" class="link-page">Clients</a>
+                      <a href="JavaScript.html" class="link-page">JavaScript </a>
+                      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                      </a>
+                </ul>
+              </nav>
+
             </div>
-            <nav>
-              <!--nav stands for navegation is like a set of signals
-              tha willl allowme to navigate the website for example a list
-              of things having
-              home , skill ...Also in other words are links that take you
-            somewhere else-->
-
-              <ul>
-                    <li class="current">Home</li>
-                    <li> <a href= "projects.html">Projects</a></li>
-                    <li> <a href="#about" class="link-page" >About</a></li>
-
-                    <li> <a href="#page-skills" class="link-page">Skills</a></li>
-                    <li> <a href="#recent_work" class="link-page">Recent Work</a></li>
-                    <li> <a href="#clients" class="link-page">Clients</a></li>
-              </ul>
-            </nav>
         </div>
     </header>
     <!-- End of Header -->
     <!-- Profile Section -->
+
+
+
+
     <section  id="showcase">
         <div class="container">
           <img alt="" data-sr="reset wait 2s enter bottom and move 150px" class="admin-pic img-circle" src="Pedro123.jpg" width="300">
 
             <section class="os-animation" data-os-animation="bounceInUp" data-os-animation-delay="0s">
-
-              <h1> <strong>Hello, I am
-                Pedro Cuji an Electrical & Computer Engineer
-              </strong></h1>
+              <div class="row" id="top">
+                    <div class="col s12">
+                      <div class="intro valign-wrapper">
+                        <h1 id="job-title" class="white-text"></h1>
+                      </div>
+                    </div>
+              </div>
+              
             </section>
 
             <section class="os-animation" data-os-animation="bounceInUp" data-os-animation-delay="0.1s">
@@ -107,33 +190,32 @@
 
     <section id= "boxes">
       <div class="container">
-        <div class="box">
+        
           <a href="https://github.com/pcuji"><i  class="fab fa-github"></i></a>
           <h3>GitHub</h3>
           <p>Collaborations on GitHub</p>
-        </div>
-        <div class="box">
+        
+        
           <a href="https://www.linkedin.com/in/pedrojosecuji"><i class="fab fa-linkedin"></i></a>
           <h3>Linkedin</h3>
           <p>Professional Profile</p>
-        </div>
-        <div class="box">
+      
+      
           <a href="https://bitcoinchain.com/"><i class="fab fa-bitcoin"></i></a>
           <h3>Bitcoin tip Jar</h3>
           <p>If you like my work</p>
-        </div>
-        <div class="box">
+     
+     
           <a href="12_2017_resume.pdf" download class="btn btn-default btn-default2"><i class="fa fa-download"></i></a>
           <!--<a href="https://www.linkedin.com/in/pedrojosecuji"  class="fas fa-download"></a> -->
           <h3>Resume Download</h3>
           <p>pdf</p>
-        </div>
-        <div class="box">
+      
           <a href="#page-contact" class="btn btn-default btn-default2 link-page"><i class="fa fa-download"></i></a>
           <!--<a href="https://www.linkedin.com/in/pedrojosecuji"  class="fas fa-download"></a> -->
           <h3>Get in touch</h3>
           <p>contact me </p>
-        </div>
+       
       </div>
     </section>
 
@@ -331,7 +413,7 @@
                     </div>
 
                     <!-- ******************************************************
-                      SECTION: REcent work
+                      SECTION: cent work
                       **********************************************************-->
                           <div class="section-vcardbody section-page" id="recent_work">
                               <div class="section-skills">
@@ -394,6 +476,7 @@ hardware tools
 
                                       </div>
                                     </div>
+
                                     <!-- ******************************************************
                                       SECTION: Get in touch
                                       **********************************************************-->
@@ -426,6 +509,39 @@ hardware tools
                                               </div>
                                             </div>
 
+                                            <!-- ******************************************************
+                                              SECTION: Form use Jekyll’s or hugo to meke this form work 
+                                              **********************************************************-->
+                                            <div class="section-vcardbody section-page" id="page-contact">
+                                                <div class="section-skills">
+                                                  <!-- Section title -->
+                                                        <h2 class="section-title">Form</h2>
+                                                  <form class="" action="index.html" method="post">
+                                                    <ul>
+                                                      <li>
+                                                        <label for="name">Name</label>
+                                                        <input type="text" id="name" name="user_name" value="">
+                                                      </li>
+                                                      <li>
+                                                        <label for="mail">E-mail</label>
+                                                        <input type="email" id="mail" name="user_email" value="">
+                                                      </li>
+                                                      <li>
+                                                        <label for="msg">Message: </label>
+                                                        <textarea id="msg" name="user_message" rows="8" ></textarea>
+                                                      </li>
+                                                      <li class= "button">
+                                                        <button type="submit" name="button">Send your Message</button>
+                                                      </li>
+
+                                                    </ul>
+
+                                                  </form>
+
+
+                                                </div>
+                                              </div>
+
 
     <footer>
       <p> @ 2018 Pedro Cuji Website</p>
@@ -441,6 +557,7 @@ hardware tools
         origin: 'bottom'
       })
     </script>
+    <script src="js/app.js"></script>
 
   </body>
 </html>
