@@ -19,7 +19,9 @@ body {/*
   overflow-x: hidden;
   font: normal 16px/30px "Open Sans", Helvetica, Arial, sans-serif;
   padding:0;
-  background: #e6fff9;
+  color: #c2cdf0;
+  background: #091a33;
+  /* background: #e6fff9; */
   font-family:Georgia,serif;
   font-size:15px;
   /* line-height is the ammount of space between each line
@@ -48,17 +50,19 @@ ul {
   padding: 0;
 }
 
-header {
+/* header {
   background: #3BF5D7;
   /* color: dodgerBlue;  this will chage the color of the header letters to a blue
   the padding-top is above the first h1 header
   min-height is for when srinking the page it will not go any further ( i think, check)
   border-bottom is the orange frame on the bottom
-  */
+
   padding-top: 5px;
   min-height: 70px;
   border-bottom: #ffa64d 3px solid;
-}
+} */
+
+
 header a {
   /*this are all the header links, since all the links are
   note keep doing this by checking the hiperlinks the way you want them to look
@@ -77,7 +81,7 @@ header a {
 header li {
   /*padding is the space around the letters
   */
-  float : left;
+  
   display: inline;
   padding: 0 20px 0 20px;
 }
@@ -113,12 +117,6 @@ header .highlight , header .current a{
   text-shadow:  1px 1px  #ffa64d ;
   color: #ffffff;
 
-  /*
-  color: #66ff66;
-text-shadow: 2px 2px #1b2947;
-  color: #ff751a;
-  color: #1b2947;
-  */
 }
 
 img {
@@ -140,25 +138,42 @@ img {
 #boxes .box .box1 h3  {
   min-height: 30px;
 }
+
+h3 {
+
+  color: #64ffda;
+}
 .box a  {
     font-size: 32px;
 }
 .section-vcardbody {
   width: 99%;
-  margin: 0 auto;
+  margin: 40px;
   overflow-y: scroll;
   margin-top: 20px;
   margin-bottom: 20px;
   padding: 20px;
-  border-top: 6px solid #111;
+  /* border-top: 6px solid #111;
   border-radius: 0px;
   box-shadow: 0px 6px 18px 0px rgba(0, 0, 0, 0.46);
-  border-bottom: 15px solid #f4f4f4;
+  border-bottom: 15px solid #f4f4f4; */
+}
+h2 {
+  display: flex;
+  align-items: center;
+}
+
+h2::after {
+  content: '';
+  flex: 1;
+  margin-left: 1rem;
+  height: 1px;
+  background-color: #c2cdf0;
 }
 .section-item-title-2 {
   font-weight: bold;
-  color: #021533;
-  color: #333;
+ 
+  color: #64ffda;
   padding-left: 0;
   margin-left: 0;
   font-size: 18px;
@@ -184,7 +199,8 @@ skills list
   margin-bottom: 0;
 }
 .progress > .progress-type {
-  position: absolute;
+  /* position: absolute; */
+  text-align: center;
   left: 0px;
   font-size: 13px;
   padding: 3px 30px 2px 10px;
@@ -195,11 +211,20 @@ skills list
   margin-bottom: 40px;
 }
 
+.section-get {
+  text-align: center;
+}
+
+.section-title  {
+ 
+text-align: center;
+}
+
 footer {
   padding: 20px;
   margin-top: 5px;
-  background-color: #3BF5D7;
-  color: #008062;
+  background-color: #091a33;
+  color: #59f7d2;
   text-align: center;
 }
 
@@ -225,7 +250,7 @@ span .progress-type {
 Nav var
 *******************/
 .topnav {
-  background-color: #333;
+  background-color: #091a33;
   overflow: hidden;
 }
 
@@ -233,7 +258,7 @@ Nav var
 .topnav a {
   float: left;
   display: block;
-  color: #f2f2f2;
+  color: #59f7d2;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -242,7 +267,7 @@ Nav var
 
 /* Change the color of links on hover */
 .topnav a:hover {
-  background-color: #ddd;
+  background-color: #59f7d2;
   color: black;
 }
 
@@ -259,7 +284,8 @@ Nav var
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {display: none;}
+  /* .topnav a:not(:first-child) {display: none;} */
+  .topnav a {display: none;}
   .topnav a.icon {
     float: right;
     display: block;
@@ -281,52 +307,7 @@ Nav var
   }
 }
 
-/* this is for the title technologies for business animation effect  */
 
-
-.ml5 {
-  position: relative;
-  font-weight: 300;
-  font-size: 4.5em;
-  color: #402d2d;
-}
-
-.ml5 .text-wrapper {
-  position: relative;
-  display: inline-block;
-  padding-top: 0.1em;
-  padding-right: 0.05em;
-  padding-bottom: 0.15em;
-  line-height: 1em;
-}
-
-.ml5 .line {
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  margin: auto;
-  height: 3px;
-  width: 100%;
-  background-color: #402d2d;
-  transform-origin: 0.5 0;
-}
-
-.ml5 .ampersand {
-  font-family: Baskerville, serif;
-  font-style: italic;
-  font-weight: 400;
-  width: 1em;
-  margin-right: -0.1em;
-  margin-left: -0.1em;
-}
-
-.ml5 .letters {
-  display: inline-block;
-  opacity: 0;
-}
-
-/* icon bar on the side  */
 
 .icon-bar {
   position: fixed;
