@@ -5,7 +5,7 @@ $(function(){
 // let because it will change
 let i = 0;
 // text to be typed out
-const text = "Hello, I am Pedro Cuji an Electrical & Computer Engineer";
+const text = "BUILDING WITH CODE";
 // The speed/duration of the effect in milliseconds
 const speed = 80;
 
