@@ -18,7 +18,7 @@ body {/*
   we want to add style to it. Also background is the rule and the number is the value you want to give it;*/
   overflow-x: hidden;
   font: normal 16px/30px "Open Sans", Helvetica, Arial, sans-serif;
-  padding:0;
+  padding:1rem;
   color: #c2cdf0;
   background: #091a33;
   /* background: #e6fff9; */
@@ -47,7 +47,7 @@ ul {
   also note how this is before the header to make it global
   */
   margin: 0;
-  padding: 0;
+  padding: 1rem;
 }
 
 /* header {
@@ -83,7 +83,7 @@ header li {
   */
   
   display: inline;
-  padding: 0 20px 0 20px;
+  padding: 1rem;
 }
 
 header #branding{
@@ -111,6 +111,7 @@ header .highlight , header .current a{
   they work as axes x, y ,z */
   min-height: 400px;
   background: url('../images/chip.png') no-repeat 0  ;
+  background-position: center center;
   text-align: right;
 
 
@@ -120,7 +121,10 @@ header .highlight , header .current a{
 }
 
 img {
-  float: left;
+  float: center;
+}
+p {
+  clear: both;
 }
 
 .image-container {
@@ -129,7 +133,7 @@ img {
   justify-content: center; /* Center images horizontally within the container */
   align-items: center; /* Center images vertically within the container */
   width: 100%; /* Ensure full width for centering */
-  height: 100vh; /* Ensure full height for centering */
+  height: auto; /* Ensure full height for centering */
 }
 
 /* boxes */
@@ -141,7 +145,7 @@ img {
 #boxes .box   {
   float: left;
   width: 18%;
-  padding: 5px;
+  padding: 1rem;
   text-align: center;
 
 }
@@ -162,7 +166,7 @@ h3 {
   overflow-y: scroll;
   margin-top: 20px;
   margin-bottom: 20px;
-  padding: 20px;
+  padding: 1rem;
   /* border-top: 6px solid #111;
   border-radius: 0px;
   box-shadow: 0px 6px 18px 0px rgba(0, 0, 0, 0.46);
@@ -184,7 +188,7 @@ h2::after {
   font-weight: bold;
  
   color: #64ffda;
-  padding-left: 0;
+  padding-left: 1rem;
   margin-left: 0;
   font-size: 18px;
   line-height: 22px;
@@ -192,7 +196,7 @@ h2::after {
   margin-bottom: 8px;
   letter-spacing: -1px;
   border-bottom: 1px dotted #021533;
-  padding-bottom: 5px;
+  padding-bottom: 1rem;
   font-size: 15px;
 }
 
@@ -200,7 +204,7 @@ h2::after {
 skills list
 *******************/
 .skills-list {
-  padding-left: 0;
+  padding-left: 1rem;
   margin-left: 0;
 }
 .progress {
@@ -213,7 +217,7 @@ skills list
   text-align: center;
   left: 0px;
   font-size: 13px;
-  padding: 3px 30px 2px 10px;
+  padding: 1rem;
   margin: 0;
 }
 .skills-list {
@@ -231,7 +235,7 @@ text-align: center;
 }
 
 footer {
-  padding: 20px;
+  padding: 1rem;
   margin-top: 5px;
   background-color: #091a33;
   color: #59f7d2;
@@ -270,7 +274,7 @@ Nav var
   display: block;
   color: #59f7d2;
   text-align: center;
-  padding: 14px 16px;
+  padding: 1rem;
   text-decoration: none;
   font-size: 17px;
 }
@@ -331,7 +335,7 @@ Nav var
 .icon-bar a {
   display: block;
   text-align: center;
-  padding: 16px;
+  padding: 1rem;
   transition: all 0.3s ease;
   color: white;
   font-size: 20px;
