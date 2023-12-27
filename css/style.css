@@ -122,6 +122,16 @@ header .highlight , header .current a{
 img {
   float: left;
 }
+
+.image-container {
+  display: flex; /* Make the container a flexbox */
+  flex-direction: column; /* Align images vertically */
+  justify-content: center; /* Center images horizontally within the container */
+  align-items: center; /* Center images vertically within the container */
+  width: 100%; /* Ensure full width for centering */
+  height: 100vh; /* Ensure full height for centering */
+}
+
 /* boxes */
 #boxes{
   margin-top: 10px;
